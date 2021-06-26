@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>HELLO WORLD</h1>
 
-    
-    
-<form method="post" action="traitement.php">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <h1>HELLO WORLD</h1>
+
+
+
+  <form method="post" action="traitement.php">
 
     <h2> Online Mortagage Application Form </h2>
-    
-    <p>
-    <label for="nom">Nom Famille:</label>
-    <div class="division">
-      <div class="gauche">
-    <input type="text" name="nom" id="nom" autofocus required placeholder="Prenom" class="spok"/> </div>
-     <div class="gauche"> <input placeholder="nom" type="text" name="prenom" id="prenom" class="spok"/></div>
+
+    <div>
+
+
+      <div class="division">
+        <div class="forme1">
+          <div class="gauche">
+            <label class="label1" for="nom">Nom:</label>
+            <input type="text" name="nom" id="nom" autofocus required placeholder="Prenom" class="spok" /> </div>
+          <div class="gauche">
+            <label class="label1" for="nom">Prenom:</label>
+            <input placeholder="nom" type="text" name="prenom" id="prenom" class="spok" /> </div>
+        </div>
+
+        <div class="forme2">
+          <div class="gauche">
+            <label class="label1" for="number">Phone number:</label>
+            <input type="number" name="number" id="number" class="spok"> </div>
+            <div class="gauche">
+              <label class="label1" for="email">Email</label>
+              <input placeholder="email" type="email" name="email" id="email" class="spok" /> </div>
+          </div>
+        </div>
     </div>
-    </p>
-             </select>
-             <p>
-               <label for="email">E-mail:</label>
-               <input type="email" name="email" id="email"/>
-             </p>
-    <p>
-      <label for="date">Date de naissance:</label>
-      <input type="date" name="date" id="date">
-      </p>
-    <p>
-      <label for="number">Phone number:</label>
-      <input type="number" name="number" id="number">
-    </p>
-    
-    
-    <p>
+    </div>
+
+
+    <div class="gauche">
       <label class="deux" for="description"> Brief description of yourself</label>
       <textarea name="descrription" id="description" cols="122" rows="10"></textarea>
-      </p>
-    <p>
-    
+    </div>
+    <div class="gauche tope">
+      <label class="label1" for="nom">Date de naissance:</label>
+      <input type="text" name="nom" id="nom" autofocus required placeholder="date de naissance" class="spok" /> </div>
+    </div>
+    <div class="gauche">
+      <label class="label1" for="status">Marital Status </label>
+      <select name="MaritalStatus" class="spok" id="">
+        <option value="done">done</option>
+        <option value="done">...</option>
+      </select>
+    </div>
+
+    </div>
+
+
+
 
 </body>
+
 </html>
